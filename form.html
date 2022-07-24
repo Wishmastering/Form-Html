@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Form</title>
+
+    
+        <style>
+            body {
+                background-color: rgb(59, 207, 59);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3vh;
+                margin-bottom: 100px;
+            }
+
+            form{
+                background-color: aliceblue;
+                max-width: 500px;
+                margin: 50px auto;
+                padding: 30px 20px;
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+                }
+
+            .form-control{
+                text-align:left;
+                margin-bottom: 25px;
+            }
+
+            .form-control label{
+                display:block;
+                margin-bottom: 10px;
+            }
+
+            .form-control input, 
+            .form-control select
+            .form-control textarea { 
+                border: 1px solid #777;
+                border-radius: 1px;
+                font-family: inherit;
+                padding: 10px;
+                display:block;
+                width: 85%;
+                }
+
+                
+            .form-control input[type="radio"]
+            .form-control input[type="checkbox"]{
+                display: inline-block;
+                width: 50%;
+            }
+            
+            button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            }
+
+            
+                input{
+                width: 100%;
+            }
+            
+            textarea{
+                max-height: 200px;
+                max-width: 300px;
+            }
+
+            input, textarea {
+                outline: green;
+                border: 1px dotted rgb(24, 49, 192);
+            }
+            
+             input:focus, textarea:focus{
+                box-shadow: 10 10 100000px black;
+                border: 2px solid tomato;
+            }
+            
+
+            
+        
+        </style>
+
+</head>
+<body>
+    <h1> GeeksforGeeks Survey Form</h1>
+    
+    <!-- Creates form-->
+    <form id="form">
+
+        <!-- Form Details -->
+        <div class="form-control">
+            <label for="fname" id="label-name">Name</label>
+        
+            <input type="text" id="name" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email"> Email</label>
+            
+            <input type="text" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">Age</label>
+
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+
+        <!-- Dropdown options -->
+        
+        <div class="form-control"> 
+            <label for="role" id="label-role">Which options best descibes you</label>
+        
+            <select name="role" id="role">
+                <option value="study0">Illiterate</option>
+                <option value="study1">Student</option>
+                <option value="study2">Intern</option>
+                <option value="study3">Junior</option>
+            </select>
+        </div>
+
+        <div class="form-control"> 
+        
+            <!-- Radio options -->
+            <label> Would you recommend GeekforGeeks to a friend</label>
+
+            Yes   <input type="radio" id="ref-1" name="ref" value="Yes">
+            No    <input type="radio" id="ref-2" name="ref" value="No">
+            Maybe <input type="radio" id="ref-3" name="ref" value="Maybe">
+        </div>
+
+        <div class="form-control">
+            <p>Language and Frameworks known <small>(Check all that apply)</small></p>
+
+            <!-- CHECKBOX options -->
+            C <input type="checkbox" id="lang1" name="lang">
+
+            C++ <input type="checkbox" id="lang2" name="lang">
+
+            C# <input type="checkbox" id="lang3" name="lang">
+
+            Python <input type="checkbox" id="lang4" name="lang">
+
+            Java <input type="checkbox" id="lang5" name="lang" >
+
+            JavaScript <input type="checkbox" id="lang6" name="lang" >
+
+            React <input type="checkbox" id="lang7" name="lang" >
+
+            Angular <input type="checkbox" id="lang7" name="lang">
+
+            Django <input type="checkbox" id="lang9" name="lang" >
+
+            Spring <input type="checkbox" id="lang10" name="lang" >
+
+        </div>
+
+        <div class="form-control">
+            <label for="comment">Any comment or suggestions below</label>
+
+            <!-- multi-line text input control -->
+            <textarea id="comment" name="comment" placeholder="Leave your comment"></textarea>
+        </div>
+
+        <button type="submit" name="submit">Kawabonga </button>
+
+
+        
+
+        
+
+ 
+    </form>
+</body>
+
+</html>
